@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="css\index.css" />
+    <!-- bootstrap link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <!-- navbar content -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Watch Shop</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="watches.html">Watches</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="uplaod.html">Upload</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- main section -->
+    <main>
+      <!-- corousel section -->
+      <div
+        id="carouselExampleFade"
+        class="carousel slide carousel-fade"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="images\Sample1.jpg"
+              class="d-block w-100"
+              alt="watch1-image"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images\Sample2.jpg"
+              class="d-block w-100"
+              alt="watch2-image"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images\Sample9.jpg"
+              class="d-block w-100"
+              alt="watch3-image"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images\Sample12.jpg"
+              class="d-block w-100"
+              alt="watch4-image"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images\Sample13.jpg"
+              class="d-block w-100"
+              alt="watch5-image"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images\Sample16.jpg"
+              class="d-block w-100"
+              alt="watch6-image"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleFade"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleFade"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- Watch section -->
+      <section>
+        <div>
+          <div class="featured">
+            <h2>Featured Watches</h2>
+          </div>
+          <div class="watches-container" id="watches-container"></div>
+          <div class="view_more">
+            <a href="watches.html" class="btn btn-primary">View More</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Us  -->
+      <section class="about">
+        <div class="about_section">
+          <h2>About Us</h2>
+        </div>
+        <div class="about_grid">
+          <div class="card_about" style="width: 40rem">
+            <img src="images\Sample3.jpg" class="card-img-top" alt="..." />
+          </div>
+          <div class="about_info">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis
+            fugit voluptates expedita quas, cumque quaerat cum cupiditate ut ab
+            officiis fuga, odio vitae? Omnis, dolores id. Vitae architecto ullam
+            laborum!
+          </div>
+        </div>
+      </section>
+
+      <!-- uplaod section -->
+      <section>
+        <div class="upload_section">
+          <h2>Upload New Watch</h2>
+        </div>
+        <div class="upload_grid">
+          <div class="upload_details">
+            <form id="watch-form">
+              <input type="text" name="name" placeholder="Watch Name" required />
+              <input type="text" name="brand" placeholder="Watch Brand" required />
+              <input type="number" name="price" placeholder="Price" required />
+              <input type="file" name="image" required />
+              <button type="submit" class="btn btn-primary" style="text-align: center">
+                Submit
+              </button>
+            </form>
+          </div>
+          <div class="card_upload" style="width: 40rem">
+            <img src="images\Sample3.jpg" class="card-img-top" alt="..." />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer section -->
+    <footer>
+      <div class="footer_main">
+        <div class="footer_details">
+          <div>
+            <h4>About</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+              ratione ipsa, asperiores officia corporis ab, cumque cum voluptate
+              deserunt dolorem in nihil inventore consequuntur tempora tenetur.
+              Doloribus modi atque harum.
+            </p>
+          </div>
+          <div>
+            <h4>Catch Up..</h4>
+            <p>Call: 1234567890</p>
+            <p>Email: demo@gmail.com</p>
+          </div>
+        </div>
+        <div class="footer-info">
+          <p>
+            &copy; <span id="displayYear"></span> All Rights Reserved By
+            <a href="https://html.design/">Watch Shop</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- bootstrap script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- bootstrap script -->
+
+    <!-- main script -->
+    <script src="script.js"></script>
+    <!-- main script -->
+  </body>
+</html>

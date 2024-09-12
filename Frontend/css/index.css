@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+nav {
+  position: sticky;
+  top: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #0c0c0c;
+  background-color: #ffffff;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+main {
+  background-color: rgba(245, 228, 228, 0.247);
+}
+
+.featured h2 {
+  background-color: #0c0c0c;
+  padding: 30px;
+  text-align: center;
+  color: azure;
+  margin: 0;
+}
+
+.watches-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.card_container {
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 50px;
+}
+
+.view_more {
+  text-align: center;
+  padding: 20px;
+}
+
+.about_section {
+  padding: 30px;
+  background-color: #0c0c0c;
+  color: azure;
+  text-align: center;
+  margin: 0;
+}
+
+.about_grid {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.card_about img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.card_about,
+.about_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.about_info {
+  padding: 20px;
+  display: flex;
+}
+
+.upload_section {
+  padding: 30px;
+  background-color: #0c0c0c;
+  color: azure;
+  text-align: center;
+  margin: 0;
+}
+
+.upload_grid {
+  padding: 20px;
+  display: flex;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.card_upload img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.card_upload,
+.upload_details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.upload_details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.upload_details input,
+.upload_details textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+  background-color: #f9f9f9;
+  font-size: 16px;
+}
+
+.upload_details textarea {
+  resize: none;
+}
+
+.upload_details input[type="file"] {
+  padding: 0;
+  margin-top: 10px;
+}
+
+.upload_details input::placeholder,
+.upload_details textarea::placeholder {
+  text-align: left;
+}
+
+.footer_main {
+  background-color: #0c0c0c;
+  color: azure;
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+}
+
+.footer_details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.footer_details div {
+  padding: 20px;
+}
+
+.footer-info {
+  padding: 20px;
+}
+
+.footer-info a {
+  text-decoration: none;
+}
+
+@media (min-width: 576px) {
+  .featured h2 {
+    padding: 20px;
+  }
+
+  .card_container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .about_grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .upload_grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer_details {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 992px) {
+  .card_container {
+    max-width: 720px;
+  }
+}
+
+input[type="submit"] {
+  z-index: 10;  /* Ensure the button is on top of other elements */
+  pointer-events: all;  /* Ensure it accepts pointer events */
+}
+input[type="submit"] {
+  cursor: pointer;  /* Show a pointer when hovering over the button */
+  background-color: #28a745;  /* Add a color to make the button visible */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fixed Header */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #343a40; /* Dark background */
+  z-index: 1000; /* Ensures the header is above other content */
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: white;
+}
+
+/* Push the content down to avoid being hidden under the header */
+main {
+  padding-top: 50px; /* Adjust based on your header height */
+}
+body {
+  padding-bottom: 0px; /* Adjust based on your footer height */
+}
