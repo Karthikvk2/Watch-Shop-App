@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-p-l%)e+69n*uwiftcglt8n-r0(-0rqabh$mpwx0l+hamrbt96c'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -80,14 +80,13 @@ WSGI_APPLICATION = 'WatchShop.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'watch_db',
-        'USER': 'root',
+        'NAME': 'Karthikvk02$watch_db',
+        'USER': 'Karthikvk02',
         'PASSWORD': 'HelloKarthik@2428',
-        'HOST': '127.0.0.1',
-        'PORT': '3306'
-    }
+        'HOST': 'Karthikvk02.mysql.pythonanywhere-services.com',
+        'PORT': '3306',
+    }   
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
