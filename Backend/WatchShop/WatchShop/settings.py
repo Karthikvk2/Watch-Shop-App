@@ -80,11 +80,11 @@ WSGI_APPLICATION = 'WatchShop.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'Karthikvk02$watch_db',
-        'USER': 'Karthikvk02',
+        'NAME': 'watch_db',
+        'USER': 'root',
         'PASSWORD': 'HelloKarthik@2428',
-        'HOST': 'Karthikvk02.mysql.pythonanywhere-services.com',
-        'PORT': '3306',
+        'HOST': '127.0.0.1',
+        'PORT': '3306'
     }   
 }
 
