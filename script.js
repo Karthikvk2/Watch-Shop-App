@@ -5,7 +5,7 @@ document
   .addEventListener("submit", function (event) {
     event.preventDefault();
     const formdata = new FormData(this);
-    fetch("http://127.0.0.1:8000/api/watches/create/", {
+    fetch("https://karthikvk02.pythonanywhere.com/api/watches/create/", {
       method: "POST",
       body: formdata,
     })
@@ -18,10 +18,10 @@ document
   });
 
 //To get all the list of Watches
-const baseUrl = "http://127.0.0.1:8000";
+const baseUrl = "https://karthikvk02.pythonanywhere.com";
 
 function displayWatches() {
-  fetch("http://127.0.0.1:8000/api/watches/")
+  fetch("https://karthikvk02.pythonanywhere.com/api/watches/")
     .then((response) => response.json())
     .then((data) => {
       const container = document.getElementById("watches-container");
